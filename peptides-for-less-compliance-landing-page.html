@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research Compliance & COA Guide | Peptides For Less</title>
+<meta name="description" content="Learn how to read and verify a Certificate of Analysis from an independent laboratory. Educational resource from Peptides For Less.">
+<meta name="robots" content="index, nofollow">
+<link rel="icon" href="https://peptidesforless.net/wp-content/uploads/2026/08/pfl.webp">
+<style>
+:root{
+  --bg:#05070f;
+  --bg-2:#0a0e1c;
+  --blue:#4c8dff;
+  --blue-deep:#2a5fd0;
+  --purple:#b455e0;
+  --cyan:#33d6e8;
+  --amber:#f2b84b;
+  --text:#e8edf8;
+  --muted:#9aa6c0;
+  --glass:rgba(255,255,255,.045);
+  --glass-2:rgba(255,255,255,.08);
+  --line:rgba(255,255,255,.11);
+  --grad:linear-gradient(100deg,#2dd4bf 0%,#38a8f5 55%,#6b8cff 100%);
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;font-size:17px;overflow-x:hidden}
+img{max-width:100%;height:auto}
+a{color:var(--cyan)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px;position:relative;z-index:2}
+h1,h2,h3{line-height:1.12;margin:0 0 .55em;letter-spacing:-.02em;color:#fff}
+h1{font-size:clamp(2.3rem,6vw,4.1rem)}
+h2{font-size:clamp(1.7rem,3.8vw,2.55rem)}
+h3{font-size:1.15rem;letter-spacing:-.01em}
+p{margin:0 0 1em;color:var(--muted)}
+section{padding:84px 0;position:relative;overflow:hidden}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--cyan);margin-bottom:16px}
+.eyebrow:before{content:"";width:26px;height:2px;background:var(--grad);border-radius:2px}
+
+/* background orbs */
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;pointer-events:none;z-index:0;animation:float 18s ease-in-out infinite}
+.orb.o1{width:460px;height:460px;background:#0f766e;top:-120px;left:-140px}
+.orb.o2{width:420px;height:420px;background:#1d4ed8;top:60px;right:-120px;animation-delay:-6s}
+.orb.o3{width:320px;height:320px;background:#0891b2;bottom:-80px;left:38%;opacity:.28;animation-delay:-11s}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,30px) scale(1.08)}}
+@media(prefers-reduced-motion:reduce){.orb{animation:none}html{scroll-behavior:auto}}
+
+/* glass */
+.glass{background:var(--glass);border:1px solid var(--line);border-radius:var(--radius);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:28px;position:relative;overflow:hidden}
+.glass:before{content:"";position:absolute;inset:0;background:linear-gradient(140deg,rgba(255,255,255,.09),transparent 45%);pointer-events:none}
+.glass>*{position:relative}
+
+/* buttons */
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none;font-size:.98rem;border:1px solid transparent;transition:.25s;text-align:center;cursor:pointer}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 8px 30px rgba(45,160,230,.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 38px rgba(45,160,230,.5)}
+.btn-ghost{border-color:var(--line);background:var(--glass);color:#fff}
+.btn-ghost:hover{background:var(--glass-2);border-color:rgba(255,255,255,.28)}
+.btn-sm{padding:10px 20px;font-size:.9rem}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+
+/* top notice + header */
+.notice{background:linear-gradient(90deg,rgba(45,212,191,.16),rgba(59,130,246,.18));border-bottom:1px solid var(--line);text-align:center;font-size:.82rem;padding:9px 16px;color:#d6defa;position:relative;z-index:60}
+.notice strong{color:#fff;letter-spacing:.05em}
+header.site{position:sticky;top:0;z-index:50;background:rgba(5,7,15,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{display:block;height:46px;width:auto;filter:brightness(1.35) saturate(1.1) drop-shadow(0 0 14px rgba(110,140,255,.35))}
+nav.main{display:flex;gap:6px 22px;flex-wrap:wrap;align-items:center}
+nav.main a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.93rem;transition:.2s}
+nav.main a:hover{color:#fff}
+nav.main a.btn{color:#fff}
+
+/* hero */
+.hero{padding:100px 0 84px;overflow:hidden}
+.hero .logo-big{height:76px;width:auto;margin-bottom:28px;filter:brightness(1.35) saturate(1.1) drop-shadow(0 0 22px rgba(110,140,255,.4))}
+.hero p.lead{font-size:1.18rem;max-width:720px;color:#c3cde6}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.chip{background:var(--glass);border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:.85rem;color:#d3dcf3;backdrop-filter:blur(10px)}
+.chip i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--cyan);margin-right:8px;box-shadow:0 0 10px var(--cyan)}
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:36px}
+.b-lg{grid-column:span 3}
+.b-md{grid-column:span 2}
+.b-wide{grid-column:span 4}
+.b-full{grid-column:span 6}
+@media(max-width:900px){.b-lg,.b-wide{grid-column:span 6}.b-md{grid-column:span 3}}
+@media(max-width:560px){.b-md{grid-column:span 6}section{padding:60px 0}}
+.icon{width:44px;height:44px;border-radius:14px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;margin-bottom:16px;box-shadow:0 8px 22px rgba(45,160,230,.35)}
+.glass p:last-child{margin-bottom:0}
+.stat{font-size:2.6rem;font-weight:800;line-height:1;margin-bottom:8px}
+
+/* checklist */
+.checks{list-style:none;padding:0;margin:0}
+.checks li{padding:11px 0 11px 36px;position:relative;border-bottom:1px solid var(--line);color:#c3cde6}
+.checks li:last-child{border-bottom:0}
+.checks li:before{content:"\2713";position:absolute;left:0;top:12px;width:24px;height:24px;border-radius:50%;background:var(--grad);color:#fff;font-size:.78rem;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+/* table */
+.table-wrap{overflow-x:auto;margin-top:34px;border-radius:var(--radius);border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(16px)}
+table{width:100%;border-collapse:collapse;min-width:580px}
+th,td{text-align:left;padding:16px 22px;border-bottom:1px solid var(--line);vertical-align:top;font-size:.95rem}
+th{background:rgba(255,255,255,.07);color:#fff;font-weight:700;letter-spacing:.02em}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700;color:#fff;white-space:nowrap}
+td:last-child{color:var(--muted)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:22px}
+.step .n{font-size:.8rem;font-weight:800;letter-spacing:.14em;color:var(--cyan);margin-bottom:10px}
+
+/* compliance */
+.warn{border-color:rgba(242,184,75,.35);background:linear-gradient(135deg,rgba(242,184,75,.1),rgba(255,255,255,.03))}
+.warn h3{color:var(--amber)}
+.warn ul{margin:0 0 0 1.1em;padding:0;color:#d4dbef}
+.warn li{margin-bottom:.6em}
+
+/* tiles */
+.tile{display:flex;flex-direction:column;transition:.25s}
+.tile:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.28)}
+.tile .btn{margin-top:auto;align-self:flex-start}
+.tile p{margin-bottom:18px}
+
+/* faq */
+details{border:1px solid var(--line);border-radius:16px;background:var(--glass);margin-bottom:12px;backdrop-filter:blur(12px);transition:.2s}
+details[open]{background:var(--glass-2)}
+summary{cursor:pointer;font-weight:700;color:#fff;padding:20px 24px;list-style:none;position:relative;padding-right:52px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:24px;top:15px;font-size:1.5rem;color:var(--cyan)}
+details[open] summary:after{content:"\2212"}
+details .a{padding:0 24px 20px;color:var(--muted)}
+
+/* cta */
+.cta{text-align:center;overflow:hidden}
+.cta .box{padding:64px 28px;border-radius:30px;background:linear-gradient(135deg,rgba(45,212,191,.2),rgba(59,130,246,.22));border:1px solid var(--line);position:relative;overflow:hidden}
+.cta p{max-width:620px;margin-left:auto;margin-right:auto;color:#c3cde6}
+.cta .btn-row{justify-content:center}
+
+/* footer */
+footer{background:#03050b;border-top:1px solid var(--line);padding:56px 0 30px;font-size:.92rem;color:var(--muted);position:relative;z-index:2}
+footer a{color:#dbe3f8;text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+footer .cols{display:flex;gap:34px 70px;flex-wrap:wrap;margin-bottom:30px}
+footer h4{color:#fff;margin:0 0 12px;font-size:.98rem}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:8px}
+footer .legal{border-top:1px solid var(--line);padding-top:22px;font-size:.84rem}
+footer .logo{height:42px;margin-bottom:14px}
+
+/* banner strip */
+.banner{background:rgba(255,255,255,.035);border-bottom:1px solid var(--line);text-align:center;font-size:.82rem;color:#b9c4de;padding:10px 16px;letter-spacing:.02em}
+.banner span{margin:0 10px;white-space:nowrap}
+.banner span:not(:last-child):after{content:"\00b7";margin-left:20px;color:var(--cyan)}
+@media(max-width:640px){.banner span{display:block;margin:2px 0}.banner span:after{display:none!important}}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:-34px;position:relative;z-index:3}
+.stats .glass{text-align:center;padding:24px 18px;background:rgba(12,16,32,.75)}
+.stats .stat{font-size:1.9rem;margin-bottom:6px}
+.stats p{font-size:.88rem;margin:0}
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+@media(max-width:900px){.pipe{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.pipe{grid-template-columns:1fr}}
+.pipe .glass .n{font-size:2.2rem;font-weight:800;line-height:1;margin-bottom:12px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.note{font-size:.9rem;color:var(--muted);margin-top:22px;border-left:3px solid var(--cyan);padding-left:14px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:34px}
+.tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.12em;color:var(--cyan);text-transform:uppercase;margin-bottom:8px}
+.contact-card a.val{color:#fff;font-weight:700;text-decoration:none;word-break:break-word}
+a[data-go]{cursor:pointer}
+summary a[data-go],.a a[data-go]{color:var(--cyan);text-decoration:underline}
+a[data-go]:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.btn[aria-disabled="true"]{pointer-events:none;cursor:default;user-select:text}
+.contact-card .val{color:#fff;font-weight:700;word-break:break-word}
+footer li span{color:#dbe3f8}
+.logo-wrap{display:inline-flex;align-items:center;background:#fff;border-radius:12px;padding:6px 14px;min-height:46px}
+.logo-wrap img{height:34px;width:auto;display:block;filter:none}
+.logo-wrap .wm{display:none;font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:#0b2a3a}
+footer .logo-wrap{margin-bottom:14px}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:160px;background:linear-gradient(rgba(5,7,15,0),var(--bg));z-index:1;pointer-events:none}
+</style>
+</head>
+<body>
+
+<div class="notice"><strong>FOR LABORATORY RESEARCH USE ONLY.</strong> 21+ only.</div>
+
+<header class="site">
+  <div class="wrap">
+    <a aria-label="Peptides For Less home" role="link" tabindex="0" data-go="aHR0cHM6Ly9wZXB0aWRlc2Zvcmxlc3MubmV0Lw==" data-t=""><span class="logo-wrap"><img src="https://peptidesforless.net/wp-content/uploads/2026/08/pfl.webp" alt="Peptides For Less" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'"><span class="wm">Peptides For Less</span></span></a>
+    <nav class="main" aria-label="Main">
+      <a href="#pipeline">Standards</a>
+      <a href="#methods">Testing</a>
+      <a href="#read-a-coa">COA Guide</a>
+      <a href="#compliance">Compliance</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary btn-sm" role="link" tabindex="0" data-go="aHR0cHM6Ly9wZXB0aWRlc2Zvcmxlc3MubmV0Lw==" data-t="">Visit Site &rarr;</a>
+    </nav>
+  </div>
+</header>
+<div class="banner"><span>Independent laboratory reports</span><span>COA library published</span><span>Research use only</span></div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" style="padding-bottom:110px">
+  <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+  <div class="wrap">
+    <span class="eyebrow">Documentation &amp; Research Standards</span>
+    <h1>Read the report. <span class="grad">Verify the batch.</span></h1>
+    <p class="lead">Peptides For Less supplies materials for laboratory research. This page explains how to read and verify a Certificate of Analysis (COA) issued by an independent laboratory.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#pipeline">Explore Our Standards &rarr;</a>
+      <a class="btn btn-ghost" role="link" tabindex="0" data-go="aHR0cHM6Ly9wZXB0aWRlc2Zvcmxlc3MubmV0L2NvYXMv" data-t="">View COA Library</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="wrap">
+  <div class="stats">
+    <div class="glass"><div class="stat grad">3rd-party</div><p>Independent laboratory reports</p></div>
+    <div class="glass"><div class="stat grad">Public</div><p>COA library on the main site</p></div>
+    <div class="glass"><div class="stat grad">RUO</div><p>Laboratory research use only</p></div>
+  </div>
+</div>
+
+<!-- PIPELINE -->
+<section id="pipeline">
+  <div class="wrap">
+    <span class="eyebrow">Documentation process</span>
+    <h2>From sample to <span class="grad">verifiable record</span></h2>
+    <div class="pipe" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div class="glass"><div class="n">01</div><h3>Independent analysis</h3><p>A sample is submitted to a third-party laboratory for analytical testing.</p></div>
+      <div class="glass"><div class="n">02</div><h3>Report issued</h3><p>The laboratory issues a report with its own test ID and test date.</p></div>
+      <div class="glass"><div class="n">03</div><h3>Published in the library</h3><p>The COA is added to the COA library on the main site.</p></div>
+      <div class="glass"><div class="n">04</div><h3>You verify</h3><p>Check the report's ID, date and batch against what is on your label.</p></div>
+    </div>
+    <p class="note">Reports are published as they become available. If you cannot find the report for your batch, get in touch through the main site.</p>
+  </div>
+</section>
+
+<!-- METHODS -->
+<section id="methods">
+  <div class="orb o2" style="top:10%;opacity:.22"></div>
+  <div class="wrap">
+    <span class="eyebrow">Analytical methods</span>
+    <h2>What a COA <span class="grad">reports</span></h2>
+    <p style="max-width:760px">The tests shown depend on the laboratory and the batch, so always read the individual report.</p>
+    <div class="grid3">
+      <div class="glass"><span class="tag">Purity</span><h3>HPLC</h3><p>High-performance liquid chromatography separates a sample into components and reports the main compound as a percentage.</p></div>
+      <div class="glass"><span class="tag">Identity</span><h3>Mass spectrometry</h3><p>Measures molecular mass to confirm the material matches the named compound.</p></div>
+      <div class="glass"><span class="tag">Quantity</span><h3>Content by assay</h3><p>Reports the measured amount per vial so it can be compared with the labelled amount.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO READ -->
+<section id="read-a-coa">
+  <div class="wrap">
+    <span class="eyebrow">COA guide</span>
+    <h2>How to <span class="grad">read a COA</span></h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Field</th><th>What it tells you</th></tr></thead>
+        <tbody>
+          <tr><td>Laboratory name</td><td>Which independent lab ran the analysis. It should be named clearly and be possible to look up.</td></tr>
+          <tr><td>Test / report ID</td><td>A unique reference for the original report.</td></tr>
+          <tr><td>Batch or sample reference</td><td>Links the report to a specific batch so results are not reused across batches.</td></tr>
+          <tr><td>Test date</td><td>When the sample was analysed.</td></tr>
+          <tr><td>Purity (HPLC)</td><td>Share of the sample that is the main compound, shown as a percentage.</td></tr>
+          <tr><td>Identity (mass spectrometry)</td><td>Confirms the measured molecular mass matches the expected compound.</td></tr>
+          <tr><td>Quantity</td><td>Measured amount per vial against the labelled amount.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="steps">
+      <div class="glass step"><div class="n">STEP 01</div><h3>Find your batch</h3><p>Match the batch reference on your label with the report in the COA library.</p></div>
+      <div class="glass step"><div class="n">STEP 02</div><h3>Check the laboratory</h3><p>Make sure the testing laboratory is named on the report and can be looked up.</p></div>
+      <div class="glass step"><div class="n">STEP 03</div><h3>Compare the fields</h3><p>Check identity, purity and quantity against what is printed on your vial.</p></div>
+      <div class="glass step"><div class="n">STEP 04</div><h3>Ask if unsure</h3><p>Get in touch through the main site for help finding the right report.</p></div>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-primary" role="link" tabindex="0" data-go="aHR0cHM6Ly9wZXB0aWRlc2Zvcmxlc3MubmV0L2NvYXMv" data-t="">Browse the COA Library &rarr;</a>
+      <a class="btn btn-ghost" role="link" tabindex="0" data-go="aHR0cHM6Ly9wZXB0aWRlc2Zvcmxlc3MubmV0L2xhYi1yZXN1bHRzLw==" data-t="">View Lab Results</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section id="compliance">
+  <div class="wrap">
+    <span class="eyebrow">Compliance</span>
+    <h2>Research-use-only <span class="grad">terms</span></h2>
+    <div class="glass warn">
+      <h3>Important notice</h3>
+      <ul>
+        <li>All materials supplied by Peptides For Less are for laboratory research use only.</li>
+        <li>Materials are not for human or veterinary use.</li>
+        <li>Customers must be 21 years or older and are responsible for safe and lawful handling.</li>
+        <li>It is the purchaser's responsibility to make sure their use complies with all laws and regulations that apply to them.</li>
+        <li>Information on this page is educational and relates to analytical testing only.</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn-ghost btn-sm" role="link" tabindex="0" data-go="aHR0cHM6Ly9wZXB0aWRlc2Zvcmxlc3MubmV0L3Rlcm1zLWNvbmRpdGlvbnMv" data-t="">Terms and Conditions</a>
+        <a class="btn btn-ghost btn-sm" role="link" tabindex="0" data-go="aHR0cHM6Ly9wZXB0aWRlc2Zvcmxlc3MubmV0L3ByaXZhY3ktcG9saWN5Lw==" data-t="">Privacy Policy</a>
+        <a class="btn btn-ghost btn-sm" role="link" tabindex="0" data-go="aHR0cHM6Ly9wZXB0aWRlc2Zvcmxlc3MubmV0L3JlZnVuZC1hbmQtcmV0dXJucy1wb2xpY3kv" data-t="">Refund and Returns Policy</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap" style="max-width:860px">
+    <span class="eyebrow">Quick answers</span>
+    <h2>Frequently asked <span class="grad">questions</span></h2>
+    <details>
+      <summary>What does "research use only" mean?</summary>
+      <div class="a">The material is supplied for use in a laboratory and is not intended for human or veterinary use.</div>
+    </details>
+    <details>
+      <summary>Where can I find the COA for my batch?</summary>
+      <div class="a">Published reports are listed in the COA library on the main site.</div>
+    </details>
+    <details>
+      <summary>What is HPLC purity?</summary>
+      <div class="a">HPLC (high-performance liquid chromatography) separates a sample into its components. The report shows the share of the sample that is the main compound, as a percentage.</div>
+    </details>
+    <details>
+      <summary>What does mass spectrometry confirm?</summary>
+      <div class="a">It measures the molecular mass of the material. If that matches the expected mass for the named compound, it supports the identity of the sample.</div>
+    </details>
+    <details>
+      <summary>Is a COA an approval for any use?</summary>
+      <div class="a">No. A COA reports analytical results for a specific batch. It is not an approval by any regulator.</div>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <span class="logo-wrap"><img src="https://peptidesforless.net/wp-content/uploads/2026/08/pfl.webp" alt="Peptides For Less" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'"><span class="wm">Peptides For Less</span></span>
+        <p style="max-width:320px">Documentation and verification resources for laboratory research materials.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul><li><span>Home</span></li><li><span>Lab Results</span></li><li><span>COAs</span></li><li><span>About</span></li></ul>
+      </div>
+      <div>
+        <h4>Customer care</h4>
+        <ul><li><span>Privacy Policy</span></li><li><span>Refund and Returns Policy</span></li><li><span>Terms and Conditions</span></li></ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Disclaimer.</strong> All materials offered by Peptides For Less are for laboratory research use only and are not for human or veterinary use. Information on this page is educational and relates to analytical testing only.</p>
+      <p>&copy; 2026 Peptides For Less. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  function go(el){
+    try{
+      var u=atob(el.getAttribute('data-go'));
+      if(el.getAttribute('data-t')==='_blank'){window.open(u,'_blank','noopener,noreferrer');}
+      else{window.location.href=u;}
+    }catch(e){}
+  }
+  document.addEventListener('click',function(e){
+    var el=e.target.closest&&e.target.closest('a[data-go]');
+    if(el){e.preventDefault();go(el);}
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key!=='Enter'&&e.key!==' ')return;
+    var el=e.target.closest&&e.target.closest('a[data-go]');
+    if(el){e.preventDefault();go(el);}
+  });
+})();
+</script>
+</body>
+</html>
